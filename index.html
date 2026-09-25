@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DrifterForDriver Community Hub</title>
-    
-    <!-- Local Browser Tab Logo -->
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="shortcut icon" type="image/png" href="logo.png">
-
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -32,13 +27,18 @@
             width: 100%;
             text-align: center;
         }
-        .logo {
+        .logo-box {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            object-fit: cover;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 3px solid #ff0000;
-            margin-bottom: 1rem;
+            margin: 0 auto 1rem auto;
+            font-size: 3rem;
+            color: #ff0000;
         }
         h1 {
             font-size: 1.8rem;
@@ -95,8 +95,10 @@
 </head>
 <body>
     <div class="container">
-        <!-- Local Logo File -->
-        <img src="logo.png" alt="DrifterForDriver Logo" class="logo">
+        <!-- Profile Logo Icon -->
+        <div class="logo-box">
+            <i class="fa-solid fa-gamepad"></i>
+        </div>
 
         <h1>DrifterForDriver</h1>
         <p class="subtitle">Official Community Hub & Projects</p>
@@ -108,7 +110,7 @@
 
         <!-- Roblox Profile Link -->
         <a href="https://www.roblox.com/users/9855852247/profile" target="_blank" class="link-btn roblox-btn">
-            <i class="fa-solid fa-gamepad"></i> Roblox Profile (@DriftersFriend)
+            <i class="fa-solid fa-user"></i> Roblox Profile (@DriftersFriend)
         </a>
 
         <!-- GitHub Projects Link -->
