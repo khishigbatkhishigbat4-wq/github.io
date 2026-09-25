@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DrifterForDriver Community Hub</title>
+    
+    <!-- Browser Tab Logo (Favicon) -->
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Ndu3nJF.png">
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/Ndu3nJF.png">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             box-sizing: border-box;
@@ -43,7 +50,10 @@
             font-size: 0.95rem;
         }
         .link-btn {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
             width: 100%;
             padding: 1rem;
             margin: 0.75rem 0;
@@ -56,9 +66,10 @@
             border: 1px solid #333;
             transition: all 0.2s ease-in-out;
         }
+        .link-btn i {
+            font-size: 1.3rem;
+        }
         .link-btn:hover {
-            background-color: #ff0000;
-            border-color: #ff0000;
             transform: translateY(-2px);
         }
         .yt-btn {
@@ -68,17 +79,23 @@
             background-color: #e60000;
         }
         .roblox-btn {
-            background-color: #00a2ff;
+            background-color: #000000;
+            border-color: #444;
         }
         .roblox-btn:hover {
-            background-color: #0088cc;
-            border-color: #0088cc;
+            background-color: #222222;
+        }
+        .github-btn {
+            background-color: #24292e;
+        }
+        .github-btn:hover {
+            background-color: #333940;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Logo from Imgur -->
+        <!-- Main Logo -->
         <img src="https://i.imgur.com/Ndu3nJF.png" alt="DrifterForDriver Logo" class="logo">
 
         <h1>DrifterForDriver</h1>
@@ -86,17 +103,17 @@
 
         <!-- YouTube Link -->
         <a href="https://www.youtube.com/@DrifterForDriverPilot" target="_blank" class="link-btn yt-btn">
-            ▶️ Visit YouTube Channel
+            <i class="fa-brands fa-youtube"></i> Visit YouTube Channel
         </a>
 
         <!-- Roblox Profile Link -->
         <a href="https://www.roblox.com/users/9855852247/profile" target="_blank" class="link-btn roblox-btn">
-            🎮 Roblox Profile (@DriftersFriend)
+            <i class="fa-solid fa-gamepad"></i> Roblox Profile (@DriftersFriend)
         </a>
 
         <!-- GitHub Projects Link -->
-        <a href="https://github.com/khishigbatkhishigbat4-wq" target="_blank" class="link-btn">
-            💻 GitHub Projects
+        <a href="https://github.com/khishigbatkhishigbat4-wq" target="_blank" class="link-btn github-btn">
+            <i class="fa-brands fa-github"></i> GitHub Projects
         </a>
     </div>
 </body>
